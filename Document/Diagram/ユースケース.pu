@@ -1,0 +1,19 @@
+@startuml
+actor ユーザー  as user
+
+package "SuperCoolMineSweeper" <<Rect>>
+
+user -- (マインスイーパーをする)
+
+user -- (遊び方を見る)
+
+user -- (ルールを決める)
+
+user -- (ランキングを確認する)
+
+user -- (ランキングをTwitterに投稿する)
+
+user -- (ランキングをLineに投稿する)
+end package
+
+@enduml

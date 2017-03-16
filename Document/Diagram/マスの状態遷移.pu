@@ -1,0 +1,20 @@
+@startuml
+[*] --> HIDDEN
+HIDDEN --> FLAG : ロングタップ
+FLAG --> HIDDEN : タップ
+HIDDEN --> OPENED : タップ
+FLAG --> [*]
+OPENED --> [*]
+note right of HIDDEN
+初期状態。
+まだタップされていない。
+end note
+note bottom of FLAG
+旗が建てられている。
+end note
+note top of OPENED
+開けられた。
+周りの八方にいくつ爆弾があるか
+表示されている。
+end note
+@enduml
