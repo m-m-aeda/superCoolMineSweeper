@@ -1,20 +1,25 @@
 @startuml
-[*] --> HIDDEN
-HIDDEN --> FLAG : ロングタップ
-FLAG --> HIDDEN : タップ
-HIDDEN --> OPENED : タップ
-FLAG --> [*]
-OPENED --> [*]
-note right of HIDDEN
+[*] --> INITIAL
+INITIAL --> FLAG : ロングタップ
+INITIAL --> NUMBER : タップ
+INITIAL --> BOMB : タップ
+FLAG --> INITIAL : タップ
+NUMBER --> [*]
+BOMB --> [*]
+note right of INITIAL
 初期状態。
 まだタップされていない。
 end note
-note bottom of FLAG
+note left of FLAG
 旗が建てられている。
 end note
-note top of OPENED
+note bottom of NUMBER
 開けられた。
 周りの八方にいくつ爆弾があるか
 表示されている。
+end note
+note right of BOMB
+開けられた。
+爆弾発見。終了。
 end note
 @enduml
