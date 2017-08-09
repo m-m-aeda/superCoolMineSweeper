@@ -1,0 +1,12 @@
+@startuml
+class SectionState {
+}
+class SectionAdapter {
+}
+class BombCounter {
+}
+class MineSweeperActivity {
+}
+
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+actor ユーザー as user
+
+package マインスイーパー
+user -- (マスを開ける)
+user -- (マスに旗を立てる)
+user -- (画面を拡大)
+user -- (画面を縮小)
+user -- (画面を移動)
+user -- (画面を元のサイズに戻す)
+user -- (ゲームをリトライする)
+user -- (ゲームを中断する)
+end package
+
+@enduml
